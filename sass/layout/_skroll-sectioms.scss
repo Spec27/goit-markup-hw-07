@@ -25,26 +25,19 @@
   }
 }
 
-.icon-antena {
-  ::before {
-    background-image: url(../images/antenna.png);
-  }
+.icon-antena::before {
+  background-image: url(../images/antenna.png);
 }
-.icon-clock {
-  ::before {
-    background-image: url(../images/clock.png);
-  }
+.icon-clock::before {
+  background-image: url(../images/clock.png);
 }
-.icon-diagram {
-  ::before {
-    background-image: url(../images/diagram.png);
-  }
+.icon-diagram::before {
+  background-image: url(../images/diagram.png);
 }
-.icon-astronaut {
-  ::before {
-    background-image: url(../images/astronaut.png);
-  }
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.png);
 }
+
 .skroll-list-title {
   color: var(--title-text-color);
   font-weight: 700;
