@@ -7,7 +7,7 @@
   display: flex;
 }
 
-.skroll-list-element {
+.skroll-list__element {
   width: 270px;
   margin-right: 30px;
   &:nth-child(4) {
@@ -45,7 +45,7 @@
   }
 }
 
-.skroll-list-title {
+.skroll-list__title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -54,7 +54,7 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-.skroll-list-paragraph {
+.skroll-list__paragraph {
   margin: 0;
   padding: 0;
   color: var(--primary-text-color);

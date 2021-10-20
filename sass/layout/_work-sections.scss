@@ -1,7 +1,7 @@
-.section.work {
+.section-work {
   padding-bottom: 94px;
 }
-.section-title {
+.section-work__title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -11,10 +11,10 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.section-title-list {
+.section-work__list {
   display: flex;
 }
-.section-title-element {
+.section-work__element {
   margin-right: 30px;
   &:nth-child(3n) {
     margin-right: 0;
@@ -23,7 +23,7 @@
 .conteiner-work {
   position: relative;
 }
-.section-title-work {
+.section-work__work {
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
@@ -34,8 +34,6 @@
   text-transform: uppercase;
   color: var(--primary-white-color);
   margin: 0;
-}
-.section-title-work {
   position: absolute;
   display: flex;
   bottom: 0px;

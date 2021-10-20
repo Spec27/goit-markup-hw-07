@@ -2,7 +2,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.klient-title {
+.client-section__klient-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -11,11 +11,11 @@
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-.client-list {
+.client-section__client-list {
   display: flex;
   justify-content: space-between;
 }
-.client-list-element {
+.client-section__client-list-element {
   display: block;
   width: 170px;
   height: 92px;
@@ -24,7 +24,7 @@
     margin-right: 0;
   }
 }
-.client-link {
+.client-section__client-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,13 +39,13 @@
     border-radius: 4px;
   }
 }
-.client-icon {
+.client-section__client-icon {
   width: 100%;
   height: 100%;
   fill: #afb1b8;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  .client-link:hover &,
-  .client-link:focus & {
+  .client-section__client-link:hover &,
+  .client-section__client-link:focus & {
     fill: var(--accent-color);
   }
 }
