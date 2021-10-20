@@ -10,21 +10,10 @@
 .skroll-list-element {
   width: 270px;
   margin-right: 30px;
-  &:nth-child(4) {
-    margin-right: 0;
-  }
-  &::before {
-    display: block;
-    content: '';
-    height: 120px;
-    margin-bottom: 30px;
-    background-size: 70px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #f5f4fa;
-  }
 }
-
+.skroll-list-element:nth-child(4) {
+  margin-right: 0;
+}
 .icon-antena::before {
   background-image: url(../images/antenna.png);
 }
@@ -36,6 +25,16 @@
 }
 .icon-astronaut::before {
   background-image: url(../images/astronaut.png);
+}
+.skroll-list-element::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
 }
 
 .skroll-list-title {
