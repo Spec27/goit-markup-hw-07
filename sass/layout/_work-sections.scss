@@ -16,9 +16,9 @@
 }
 .section-title-element {
   margin-right: 30px;
-}
-.section-title-element:nth-child(3n) {
-  margin-right: 0;
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 .conteiner-work {
   position: relative;

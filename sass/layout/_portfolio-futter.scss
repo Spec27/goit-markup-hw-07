@@ -55,28 +55,30 @@
 .portfolio-footer-contact .address {
   color: var(--primary-white-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.portfolio-footer-contact .address:hover,
-.portfolio-footer-contact .address:focus {
-  color: var(--accent-color);
-}
+
 .portfolio-footer-contact .link {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-footer-contact .link:hover,
-.portfolio-footer-contact .link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .portfolio-social-item {
   width: 44px;
   height: 44px;
   margin-right: 10px;
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 }
-.portfolio-social-item:nth-child(4n) {
-  margin-right: 0;
-}
+
 .portfolio-social-link {
   width: 100%;
   height: 100%;
@@ -86,6 +88,10 @@
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 .footer-social-list {
   display: flex;
@@ -95,15 +101,12 @@
   width: 20px;
   height: 20px;
   fill: var(--primary-white-color);
+  .portfolio-social-link:hover &,
+  .portfolio-social-link:focus & {
+    fill: var(--primary-white-color);
+  }
 }
-.portfolio-social-link:hover,
-.portfolio-social-link:focus {
-  background-color: var(--accent-color);
-}
-.portfolio-social-link:hover .portfolio-social-icon,
-.portfolio-social-link:focus .portfolio-social-icon {
-  fill: var(--primary-white-color);
-}
+
 .potfolio-form-email {
   display: inline-flex;
   width: 358px;
@@ -116,11 +119,10 @@
   background-color: transparent;
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus {
+    border-color: #2196f3;
+  }
 }
-.potfolio-form-email:focus {
-  border-color: #2196f3;
-}
-
 .portfolio-footer-form-button {
   display: inline-flex;
   justify-content: center;
@@ -138,10 +140,10 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-footer-form-button:focus,
-.portfolio-footer-form-button:hover {
-  color: #ffffff;
-  background-color: #2196f3;
-  fill: var(--primary-white-color);
+  &:focus,
+  &:hover {
+    color: #ffffff;
+    background-color: #2196f3;
+    fill: var(--primary-white-color);
+  }
 }

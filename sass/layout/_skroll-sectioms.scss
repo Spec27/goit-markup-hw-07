@@ -10,33 +10,41 @@
 .skroll-list-element {
   width: 270px;
   margin-right: 30px;
-}
-.skroll-list-element:nth-child(4) {
-  margin-right: 0;
-}
-.icon-antena::before {
-  background-image: url(../images/antenna.png);
-}
-.icon-clock::before {
-  background-image: url(../images/clock.png);
-}
-.icon-diagram::before {
-  background-image: url(../images/diagram.png);
-}
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.png);
-}
-.skroll-list-element::before {
-  display: block;
-  content: '';
-  height: 120px;
-  margin-bottom: 30px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #f5f4fa;
+  &:nth-child(4) {
+    margin-right: 0;
+  }
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: 30px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f5f4fa;
+  }
 }
 
+.icon-antena {
+  ::before {
+    background-image: url(../images/antenna.png);
+  }
+}
+.icon-clock {
+  ::before {
+    background-image: url(../images/clock.png);
+  }
+}
+.icon-diagram {
+  ::before {
+    background-image: url(../images/diagram.png);
+  }
+}
+.icon-astronaut {
+  ::before {
+    background-image: url(../images/astronaut.png);
+  }
+}
 .skroll-list-title {
   color: var(--title-text-color);
   font-weight: 700;
