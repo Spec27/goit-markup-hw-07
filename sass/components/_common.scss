@@ -41,9 +41,14 @@ body {
 .span-nav-logo {
   color: #000000;
 }
+
 .futter-logo {
   margin-bottom: 20px;
 }
 .span-futter-logo {
   color: #ffffff;
+}
+.page-header {
+  background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ececec;
 }
