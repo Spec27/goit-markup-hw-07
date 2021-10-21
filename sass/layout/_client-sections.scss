@@ -3,7 +3,8 @@
 }
 .client-section__klient-title {
   color: var(--title-text-color);
-  @include font(700, 36px, 1.16) text-align: center;
+  @include font(700, 36px, 1.16);
+  text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
