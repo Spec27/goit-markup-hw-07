@@ -1,9 +1,7 @@
 .button-portfolio {
   color: var(--title-text-color);
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include pading(6px, 22px, 6px, 22px);
+  @include font(500, 16px, 1.62);
   text-align: center;
   letter-spacing: 0.03em;
   border: transparent;
@@ -26,8 +24,7 @@
 
 /* portfolio list */
 .portfolio-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include pading(92px, 0, 92px, 0);
 }
 .portfolio-button {
   display: flex;
@@ -71,9 +68,7 @@
 .portfolio-list-paragraph {
   font-family: Roboto;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(400, 16px, 1.87);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
@@ -98,12 +93,10 @@
 .text-description {
   position: absolute;
   height: 100%;
-  padding: 63px 24px;
+  @include pading(63px, 24px, 63px, 24px);
   font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  @include font(400, 18px, 1.56);
   letter-spacing: 0.03em;
   margin: 0;
   color: #ffffff;
@@ -121,22 +114,18 @@
   }
 }
 .portfolio-list-div {
-  padding: 20px 24px 20px 24px;
+  @include pading(20px, 24px, 20px, 24px);
 }
 .portfolio-list-title {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font(700, 18px, 2);
   letter-spacing: 0.06em;
   color: #212121;
   margin-bottom: 4px;
 }
 .portfolio-list-paragraph {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(400, 16px, 1.87);
   letter-spacing: 0.03em;
   margin: 0;
 }

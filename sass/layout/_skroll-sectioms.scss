@@ -1,6 +1,5 @@
 .section.skr {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include pading(94px, 0, 94px, 0);
 }
 
 .skroll-list {
@@ -47,9 +46,7 @@
 
 .skroll-list__title {
   color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -58,8 +55,6 @@
   margin: 0;
   padding: 0;
   color: var(--primary-text-color);
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(400, 14px, 1.71);
   letter-spacing: 0.03em;
 }

@@ -6,17 +6,14 @@
   display: flex;
 }
 .portfolio-footer-address {
-  padding-top: 59px;
-  padding-bottom: 61px;
+  @include pading(59px, 0, 61px, 0);
 }
 .portfolio-footer-social {
-  padding-top: 72px;
-  padding-bottom: 100px;
+  @include pading(72px, 0, 100px, 0);
   margin-right: 93px;
 }
 .portfolio-futter-div-form {
-  padding-top: 72px;
-  padding-bottom: 100px;
+  @include pading(72px, 0, 100px, 0);
 }
 .portfolio-footer-li {
   margin-bottom: 9px;
@@ -25,9 +22,7 @@
   display: flex;
   font-family: Roboto;
   font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(700, 14px, 1.71);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -37,9 +32,7 @@
   color: var(--accent-color);
   font-family: Raleway;
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  @include font(700, 26px, 1.19);
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
@@ -47,9 +40,7 @@
 .portfolio-footer-contact {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  @include font(400, 14px, 1.71);
   letter-spacing: 0.03em;
   margin-right: 70px;
 }
@@ -130,9 +121,7 @@
   align-items: center;
   font-family: Roboto;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+  @include font(700, 16px, 1.87);
   width: 200px;
   height: 50px;
   border: none;
